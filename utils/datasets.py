@@ -17,7 +17,7 @@ from skimage.transform import resize
 import sys
 
 class ImageFolder(Dataset):
-    def __init__(self, folder_path, img_size=416):
+    def __init__(self, folder_path, img_size=128):
         self.files = sorted(glob.glob('%s/*.*' % folder_path))
         self.img_shape = (img_size, img_size)
 
